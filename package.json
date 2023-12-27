@@ -1,5 +1,6 @@
 {
     "name": "tiktok-ui",
+    "homepage": "https://thancode99382.github.io/tiktokui",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -24,12 +25,15 @@
     "devDependencies": {
         "babel-plugin-module-resolver": "^4.1.0",
         "customize-cra": "^1.0.0",
+        "gh-pages": "^6.1.1",
         "react-app-rewired": "^2.2.1",
         "sass": "^1.51.0"
     },
     "scripts": {
         "start": "react-app-rewired start",
         "build": "react-app-rewired build",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "test": "react-app-rewired test",
         "eject": "react-app-rewired eject"
     },
